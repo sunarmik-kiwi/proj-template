@@ -1,0 +1,40 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production  node server.js",
+    "dev": "NODE_ENV=development nodemon src/app.js | pino-pretty",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "close-with-grace": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fast-json-stringify": "^5.4.0",
+    "file-stream-rotator": "^0.6.1",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "newrelic": "^9.2.0",
+    "node-cache": "^5.1.2",
+    "opossum": "^6.4.0",
+    "pino": "^8.6.1",
+    "redis": "^4.3.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "nodemon": "^2.0.15",
+    "pino-pretty": "^9.1.1",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1"
+  }
+}
